@@ -15,6 +15,17 @@
 
 			<ui:include src="/WEB-INF/template/pedidos/CapaPedido.xhtml" />
 
+			<p:tabView style="margin-top: 20px">
+				<p:tab title="Itens">
+					<ui:include src="/WEB-INF/template/pedidos/ItensPedido.xhtml"></ui:include>
+				</p:tab>
+				<p:tab title="Dados de Entrega">
+				</p:tab>
+				<p:tab title="Observação">
+				</p:tab>
+				
+			</p:tabView>
+
 		</h:form>
 	</ui:define>
 

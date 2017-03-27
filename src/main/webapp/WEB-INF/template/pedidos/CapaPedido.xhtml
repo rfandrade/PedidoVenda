@@ -15,7 +15,7 @@
 		<h:outputText value="Orçamento" />
 
 		<p:outputLabel  value="Vendedor" for="vendedor"/>
-		<p:selectOneMenu>
+		<p:selectOneMenu id="vendedor">
 			<f:selectItem itemLabel="Selecione" />
 			<f:selectItem itemLabel="João das Coves" />
 		</p:selectOneMenu>
@@ -24,7 +24,7 @@
 		<p:autoComplete id="cliente" size="40" dropdown="true" />
 		
 		<p:outputLabel  value="Forma de pagamento" for="formaPagamento"/>
-		<p:selectOneMenu>
+		<p:selectOneMenu id="formaPagamento">
 			<f:selectItem itemLabel="Selecione" />
 			<f:selectItem itemLabel="Cartão de crédito" />
 		</p:selectOneMenu>
@@ -34,6 +34,12 @@
 
 		<p:outputLabel  value="Subtotal" for="subtotal" style="font-weight: bold" />
 		<h:outputText id="subtotal" value="R$ 0,00" style="font-weight: bold"   />
+
+		<p:outputLabel  value="Valor do desconto" for="valorDesconto"/>
+		<p:inputText id="valorDesconto" size="10" maxlength="10"/>
+
+		<p:outputLabel  value="Total do pedido" for="totalPedido" style="font-weight: bold; font-size: 1.1em" />
+		<h:outputText id="totalPedido" value="R$ 0,00" style="font-weight: bold; font-size: 1.1em"   />
 
 	</p:panelGrid>
 
