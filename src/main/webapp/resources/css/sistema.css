@@ -75,3 +75,7 @@ h1 {
 .ui-selectmanycheckbox td label {
 	padding-right: 10px;
 }
+
+.produto-tabela input {
+	width: 99%
+}
