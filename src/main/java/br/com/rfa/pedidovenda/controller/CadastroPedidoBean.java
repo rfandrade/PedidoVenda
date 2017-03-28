@@ -14,6 +14,8 @@ public class CadastroPedidoBean {
 	public CadastroPedidoBean(){
 		itens = new ArrayList<>();
 		itens.add(1);
+		
+		System.out.println(itens.size());
 	}
 	
 	public List<Integer> getItens(){
