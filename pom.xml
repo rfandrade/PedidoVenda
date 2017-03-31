@@ -29,6 +29,7 @@
 			<version>2.2.14</version>
 			<scope>compile</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -43,9 +44,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-
 		</plugins>
-
 	</build>
 
 	<repositories>
