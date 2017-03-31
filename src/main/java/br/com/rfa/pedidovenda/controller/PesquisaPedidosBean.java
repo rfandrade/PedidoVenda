@@ -5,9 +5,10 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.bean.ViewScoped;
 
 @ManagedBean
-@RequestScoped
+@ViewScoped
 public class PesquisaPedidosBean {
 
 	
@@ -18,6 +19,7 @@ public class PesquisaPedidosBean {
 		for (int i = 0; i < 50; i++) {
 			pedidosFiltrados.add(i);
 		}
+		System.out.println(pedidosFiltrados.size());
 	}
 	
 	public List<Integer> getPedidosFiltrados(){
